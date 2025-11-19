@@ -16,12 +16,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ApiCurrencyLoader implements CurrencyLoader {
-    private final String ApiKey;
-    private final String ApiUrl;
+    private final Api api;
 
-    public ApiCurrencyLoader() {
-        this.ApiKey = new DotenvBuilder().load().get("API_KEY");
-        this.ApiUrl = "https://v6.exchangerate-api.com/v6/API-KEY/".replace("API-KEY", this.ApiKey);
+    public ApiCurrencyLoader(Api api) {
+        this.api = api;
     }
 
     @Override
@@ -75,6 +73,6 @@ public class ApiCurrencyLoader implements CurrencyLoader {
     }
 
     private URLConnection openConnection() throws IOException {
-        return new URL(this.ApiUrl + "codes").openConnection();
+        return new URL(api.url() + "codes").openConnection();
     }
 }
