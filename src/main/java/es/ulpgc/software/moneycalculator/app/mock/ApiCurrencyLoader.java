@@ -4,9 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import es.ulpgc.software.moneycalculator.io.CurrencyLoader;
-import es.ulpgc.software.moneycalculator.model.Currency;
-import io.github.cdimascio.dotenv.DotenvBuilder;
+import es.ulpgc.software.moneycalculator.architecture.io.CurrencyLoader;
+import es.ulpgc.software.moneycalculator.architecture.model.Currency;
 
 import java.io.IOException;
 import java.io.InputStream;

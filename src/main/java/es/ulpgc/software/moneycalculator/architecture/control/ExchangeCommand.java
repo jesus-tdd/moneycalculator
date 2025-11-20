@@ -1,4 +1,4 @@
-package es.ulpgc.software.moneycalculator.control;
+package es.ulpgc.software.moneycalculator.architecture.control;
 
 public class ExchangeCommand implements Command{
     @Override

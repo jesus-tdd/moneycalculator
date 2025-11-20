@@ -1,8 +1,7 @@
 package es.ulpgc.software.moneycalculator.app.mock;
 
-import es.ulpgc.software.moneycalculator.io.ExchangeRateLoader;
-import es.ulpgc.software.moneycalculator.model.Currency;
-import es.ulpgc.software.moneycalculator.model.ExchangeRate;
+import es.ulpgc.software.moneycalculator.architecture.model.Currency;
+import es.ulpgc.software.moneycalculator.architecture.model.ExchangeRate;
 
 import java.util.List;
 

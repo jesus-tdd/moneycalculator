@@ -2,14 +2,13 @@ package es.ulpgc.software.moneycalculator.app.mock;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import es.ulpgc.software.moneycalculator.io.ExchangeRateLoader;
-import es.ulpgc.software.moneycalculator.model.Currency;
-import es.ulpgc.software.moneycalculator.model.ExchangeRate;
+import es.ulpgc.software.moneycalculator.architecture.io.ExchangeRateLoader;
+import es.ulpgc.software.moneycalculator.architecture.model.Currency;
+import es.ulpgc.software.moneycalculator.architecture.model.ExchangeRate;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.time.LocalDate;
