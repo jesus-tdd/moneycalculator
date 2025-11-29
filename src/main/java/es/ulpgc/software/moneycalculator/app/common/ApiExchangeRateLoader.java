@@ -1,4 +1,4 @@
-package es.ulpgc.software.moneycalculator.app.mock;
+package es.ulpgc.software.moneycalculator.app.common;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
