@@ -18,6 +18,6 @@ public class SwingMoneyDisplay extends JPanel implements MoneyDisplay {
 
     @Override
     public void show(Money money) {
-        label.setText(money.amount() + " " + money.currency().code());
+        label.setText(money.amount() + " " + money.currency());
     }
 }
